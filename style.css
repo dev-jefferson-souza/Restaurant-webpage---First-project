@@ -1,0 +1,199 @@
+*{
+  font-family: 'Mulish', sans-serief;
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+/*header*/
+header{
+  align-items: center;
+  background-color: black;
+  border-radius: 0px 0px 8px 8px;
+  display: block;
+
+  padding: 13px 85px 13px 85px;
+  position: fixed;
+
+  height: 3.5rem;
+  width: 100%;
+  z-index: 1;
+}
+
+.logoWritten{
+  display: block;
+  width: 12.8125rem;
+  height: 1.875rem;
+  margin: auto;
+}
+
+body{
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+h1{
+  color: white;
+  
+  font-family: 'Mulish';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 36px;
+  line-height: 45px;
+  
+  margin: auto;
+  padding: 0% 4.5% 0% 4.5%;
+}
+
+h2{
+font-weight: 700;
+font-size: 24px;
+
+line-height: 30px;
+text-align: center;
+
+margin-top: 64px;
+margin-bottom: 16px;
+}
+
+h3{
+  margin: 24px 0px 24px 0px;
+  text-align: center;
+}
+
+h4{
+  color: white;
+  font-size: 12px;
+}
+
+p{
+font-family: 'Mulish';
+font-style: normal;
+font-weight: 500;
+font-size: 20px;
+line-height: 25px;
+
+margin-top: 14px;
+margin-bottom: 14px;
+text-align: center;
+}
+
+button{
+background-color: #AC001C;
+border-radius: 8px;
+border-color: #AC001C;
+color: white;
+
+display: block;
+margin: auto;
+
+font-weight: 800;
+font-size: 24px;
+
+padding: 12px 28px 12px 28px;
+}
+
+/*container*/
+.container{
+  overflow: hidden;
+  width: 100%;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+/*divider*/
+#divider{
+  height: 161px;
+  display: none;
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.dividerposition{
+  display: flex;
+  position: relative;
+  }
+
+/*firstBlock*/
+.firstBlock{
+  display: grid;
+  margin: auto;
+  width: 100%;
+}
+
+.img1Block1{
+  border-radius: 8px 8px 0px 0px;
+  margin-bottom: 4px;
+  margin: auto;
+  max-width: 100% ;
+}
+
+.bothImgBlock1{ 
+  width: 49.5%;
+}
+
+ /*groupImgs2*/
+.groupImgs2{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-bottom: 4px;
+  margin: auto;
+  max-width: auto ;
+}
+
+.boothImgBlock2{
+  background-size: cover;
+  height: 280px;
+  width: auto;
+}
+
+  /*cards*/
+.groupCards{
+  display: grid;
+  grid-template-columns: 132px 132px;
+  margin: auto;
+  width: fit-content;
+}
+
+.card{
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.25) 64.58%, rgba(0, 0, 0, 0) 100%),;
+  background-position: center center;
+  background-size: cover;
+  
+  border-radius: 8px 8px 8px 8px;
+  display: inline-block;
+
+  font-weight: 900;
+  font-size: 14px;
+  line-height: 16px;
+
+
+  margin: auto;
+  padding: 14px 14px 14px 14px;
+  text-align: center;
+
+  width: 130px;
+  height: 164px;
+}
+
+.kenny{
+  display: block;
+  float: left;
+  text-align: center;
+  width: fit-content;
+}
+
+.brayan{
+  display: block;
+  float: right;
+  text-align: center;
+  width: fit-content;
+}
+
+.owners{
+  width: 150px;
+  border-radius: 100%;
+}
