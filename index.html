@@ -20,11 +20,24 @@
 </header>
 
 <body>
+
+  <!--MENU BUTTON-->
+<div class="action" onclick="actionToggle();">
+  <span>+</span>
+  <ul>  
+    <li> <a href="#about">Sobre</a><img class="iconButton" src="./assets/icons/logoButton.png" alt=""></li>
+      <li> <a href="#container3">Cardápio</a><img class="iconButton" src="./assets/icons/scarf.png" alt=""></li>
+      <li> <a href="#local">Local</a><img class="iconButton" src="./assets/icons/local.png" alt=""></li>
+      <li> <a href="#home">Início</a> <img class="iconButton" src="./assets/icons/home.png" alt=""></li>
+  </ul>
+</div>
+
   <!--HOME-->
   <section id="home" style=" background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url(./assets/table.jpg);
                              background-position: left center; 
                              background-size: cover;
-                             display: block;
+                             width: 100%;
+                             display: inline-block;
                              padding: 120px 0px 130px 0px ;
   
   border-radius: 0px 0px 8px 8px;">
@@ -44,7 +57,7 @@
   </div>
 
 <!--container 1-->
-  <section class="container" style="padding-top:126px;">
+  <section id="local" class="container" style="padding-top:126px;">
     <h2 style="margin-top: 48px;">A Casa Brüder chegou a sua cidade, venha conhecer!</h2>
     <p>Em setembro de 2021, Petrópolis recebeu um cantinho alemão. Aqui você encontrará um cardápio versátil pronto para lhe atender a qualquer hora do dia. Também garantimos um atendimento exepcional, e muita diversão para você e sua família (e com família, estamos incluíndo seu pet nessa).</p>
 
@@ -77,48 +90,38 @@
       <div class="boothImgBlock2"
            style="background-image: url(./assets/team.jpg);
                   background-position: left center;
-                  border-radius: 8px 0px 0px 8px;
-                  float: left;
-                  margin-right: 1px;"></div>
+                  border-radius: 8px 0px 0px 8px;"></div>
 
       <div class="boothImgBlock2"
            style="background-image: url(./assets/chef.jpg);
                   background-position: center, left ;
-                  border-radius: 0px 8px 8px 0px;
-                  float: right;
-                  margin-left: 1px;"></div>
+                  border-radius: 0px 8px 8px 0px;"></div>
     </div>
   </section>
 
   <!--container 3-->
-  <section class="container">
+  <section id="container3" class="container">
     <h2>Conheça nossas:</h2>
     <div class="groupCards">
       <a class="card" style="background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
-                                                 url(./assets/image1.jpg);
-                              margin-bottom: 2px;
-                              float: left;">
+                                                 url(./assets/image1.jpg);"]>
                               <h4 style="font-size: 14px; margin-bottom: 30px ;">Especialidades</h4>
                               <h4>Você vai sentir o gostinho de quero mais.</h4></a>
 
       <a class="card" style="background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), 
-                                                 url(./assets/image2.jpg);
-                               margin-bottom: 2px;
-                               float: right;">
+                                                 url(./assets/image2.jpg);">
                                <h4 style="font-size: 14px; margin-bottom: 30px;">Bebidas</h4>
                                <h4>Conheça a verdadeira cerveja artesanal alemã.</h4></a>
 
   
 
       <a class="card" style="background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), 
-                                                 url(./assets/image3.jpg);
-                                                 float: left;">
+                                                 url(./assets/image3.jpg);">
                                                  <h4 style="font-size: 14px; margin-bottom: 30px;">Sobremesas</h4>
                                                  <h4>Que tal a saborosa torta alemã?</h4></a>
 
       <a class="card" style="background-image:  linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), 
-                                                  url(./assets/image4.jpg);
-                                                  float: right;">
+                                                  url(./assets/image4.jpg);">
                                                   <h4 style="font-size: 14px; margin-bottom: 30px;">Entradas</h4>
                                                   <h4>Aperitivos de dar água na boca...</h4></a>
     </div>
@@ -126,7 +129,7 @@
   </section>
 
   <!--container 4-->
-  <section class="container">
+  <section id="about" class="container">
     <h2>Mas afinal, quem somos?</h2>
     <p>Fundada em setembro de 2021, por Kenny e Brayan Pavelka, filhos do empresário Thomas Pavelka, dono da Lanchonete Pavelka. A Casa Brüder busca seguir o mesmo caminho da Lanchonete Pavelka, e assim expandir o legado da família na cidade. Garantimos experiências incriveis a cada visita.</p>
 
@@ -143,8 +146,35 @@
     </div>
   </section>
 
+  <!--container 5-->
   <section class="container">
-    <h2>Para mais informações, siga a gente nas redes sociais</h2>
+    <h2>Para mais informações, siga a gente nas <b style="background-color: #AC001C; border-radius: 0px; color: white; padding: 0px 4px 0px 4px;"> redes sociais</b></h2>
+
+    <div class="socialMedia">
+      <div class="instagram">
+        <a class="social" href="https://www.instagram.com/casa.bruder/">Instagram</a>
+        <img class="logo" src="./assets/insta.png" alt="Logo do Instagram">
+      </div>
+
+      <div class="facebook">
+        <a class="social" href="https://www.facebook.com/Casa-Br%C3%BCder-108903718218517">Facebook</a>
+        <img class="logo" src="./assets/facebook.png" alt="Logo do Facebook">
+      </div>
+    </div> 
   </section>
 </body>
+
+<!--footer-->
+<footer>
+  <h3 style=" font-family: 'Mulish';
+              font-style: normal;
+              font-weight: 800;
+              font-size: 18px;">CNPJ: 41.034.579/0001-90 <br>
+    Endereço: Br 040, KM 65 - Araras, Petrópolis - RJ, 25725-670 <br>
+    Contato: (24) 99221-7065 <br>
+    CASA BRUDER LTDA</h3>
+  <img style="margin-top: 80px; margin: auto;"
+  class="logoWritten" src="./assets/logowritten.png" alt="Logo escrito Casa Brüder, onde dois asteriscos substituem o trema na letra U.">
+</footer>
+<script src="./script.js"></script>
 </html>
