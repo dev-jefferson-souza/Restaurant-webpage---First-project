@@ -17,6 +17,12 @@
 
 <header>
   <img class="logoWritten" src="./assets/logowritten.png" alt="Logo escrito Casa Brüder, onde dois asteriscos substituem o trema na letra U.">
+  <ul class="headerButtons">
+    <li><a href="#home">Início</a></li>
+    <li><a href="#local">Local</a></li>
+    <li><a href="#menu">Cardápio</a></li>
+    <li><a href="#about">Sobre</a></li>
+  </ul>
 </header>
 
 <body>
@@ -25,31 +31,21 @@
 <div class="action" onclick="actionToggle();">
   <span>+</span>
   <ul>  
-    <li> <a href="#about">Sobre</a><img class="iconButton" src="./assets/icons/logoButton.png" alt=""></li>
-      <li> <a href="#container3">Cardápio</a><img class="iconButton" src="./assets/icons/scarf.png" alt=""></li>
-      <li> <a href="#local">Local</a><img class="iconButton" src="./assets/icons/local.png" alt=""></li>
-      <li> <a href="#home">Início</a> <img class="iconButton" src="./assets/icons/home.png" alt=""></li>
+     <li> <a href="#about">Sobre <img class="iconButton" src="./assets/icons/logoButton.png" alt=""> </a></li>
+      <li> <a href="#container3">Cardápio <img class="iconButton" src="./assets/icons/scarf.png" alt=""></a> </li>
+      <li> <a href="#local">Local <img class="iconButton" src="./assets/icons/local.png" alt=""></a> </li>
+      <li> <a href="#home">Início <img class="iconButton" src="./assets/icons/home.png" alt=""></a></li>
   </ul>
 </div>
 
   <!--HOME-->
-  <section id="home" style=" background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url(./assets/table.jpg);
-                             background-position: left center; 
-                             background-size: cover;
-                             width: 100%;
-                             display: inline-block;
-                             padding: 120px 0px 130px 0px ;
-  
-  border-radius: 0px 0px 8px 8px;">
+  <section id="home">
     <h1>
                A GASTRONOMIA ALEMÃ COM UM TOQUE CONTEMPORÂNEO</h1>
 
-    <p style="color: white;
-              text-align: left;
-              margin: 100px 27px 80px 27px;
-              width: fit-content;">
+    <p id="pHome">
               A Casa Brüder busca resgatar a verdadeira culinária alemã. Venha conhecer o real significado da palavra sabor.</p>
-    <button class="button">Ver cardápio</button>
+    <button class="button"> <a href="#menu">Ver cardápio</a></button>
   </section>
   
   <div class="dividerPosition">
@@ -57,21 +53,17 @@
   </div>
 
 <!--container 1-->
-  <section id="local" class="container" style="padding-top:126px;">
+  <section id="local" class="container" style="padding-top:24px;">
     <h2 style="margin-top: 48px;">A Casa Brüder chegou a sua cidade, venha conhecer!</h2>
     <p>Em setembro de 2021, Petrópolis recebeu um cantinho alemão. Aqui você encontrará um cardápio versátil pronto para lhe atender a qualquer hora do dia. Também garantimos um atendimento exepcional, e muita diversão para você e sua família (e com família, estamos incluíndo seu pet nessa).</p>
 
     <div class="firstBlock"> <!--PRIMEIRO BLOCO DE IMAGENS-->
-      <img class="img1Block1" src="./assets/family.jpg" alt="Família feliz reunida em um restaurante"
-           style="margin-bottom: 4px;">
+      <img  id="family" class="img1Block1" src="./assets/family.jpg" alt="Família feliz reunida em um restaurante">
 
       <!--GROUP OF IMAGES 1-->
-      <div class="groupImgs1">
-      <img class="bothImgBlock1" src="./assets/dog.jpeg" alt="Cachorro na área do restaurante, ao lado de uma placa de 'PetFriendly'"
-           style=" border-radius: 0px 0px 0px 8px; float: left;">
+        <img id="dog" class="bothImgBlock1" src="./assets/dog.jpeg" alt="Cachorro na área do restaurante, ao lado de uma placa de 'PetFriendly'">
 
-      <img src="./assets/place.jpeg" alt="Área do restaurante na qual podemos ver diversos decks."
-           style=" border-radius: 0px 0px 8px 0px; float: right;" class="bothImgBlock1">
+        <img id="place" class="bothImgBlock1" src="./assets/place.jpeg" alt="Área do restaurante na qual podemos ver diversos decks.">
       </div>
     </div>
     <h3>Endereço: Br 040, KM 65 - Araras, Petrópolis - RJ, 25725-670</h3>
@@ -87,15 +79,9 @@
     <p>Nossa equipe deixa um toque especial em cada prato. Você poderá se deliciar com nossos drinks artesanais e levar um pouquinho dessa felicidade para casa com nossos pães e nossas delicatéssen's.</p>
 
     <div class="groupImgs2">
-      <div class="boothImgBlock2"
-           style="background-image: url(./assets/team.jpg);
-                  background-position: left center;
-                  border-radius: 8px 0px 0px 8px;"></div>
+      <div id="team" class="bothImg2"></div>
 
-      <div class="boothImgBlock2"
-           style="background-image: url(./assets/chef.jpg);
-                  background-position: center, left ;
-                  border-radius: 0px 8px 8px 0px;"></div>
+      <div id="chef" class="bothImg2"></div> </div>
     </div>
   </section>
 
@@ -105,24 +91,24 @@
     <div class="groupCards">
       <a class="card" style="background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
                                                  url(./assets/image1.jpg);"]>
-                              <h4 style="font-size: 14px; margin-bottom: 30px ;">Especialidades</h4>
+                              <h4 class="titleH4">Especialidades</h4>
                               <h4>Você vai sentir o gostinho de quero mais.</h4></a>
 
       <a class="card" style="background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), 
                                                  url(./assets/image2.jpg);">
-                               <h4 style="font-size: 14px; margin-bottom: 30px;">Bebidas</h4>
+                               <h4 class="titleH4">Bebidas</h4>
                                <h4>Conheça a verdadeira cerveja artesanal alemã.</h4></a>
 
   
 
       <a class="card" style="background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), 
                                                  url(./assets/image3.jpg);">
-                                                 <h4 style="font-size: 14px; margin-bottom: 30px;">Sobremesas</h4>
+                                                 <h4 class="titleH4"">Sobremesas</h4>
                                                  <h4>Que tal a saborosa torta alemã?</h4></a>
 
       <a class="card" style="background-image:  linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), 
                                                   url(./assets/image4.jpg);">
-                                                  <h4 style="font-size: 14px; margin-bottom: 30px;">Entradas</h4>
+                                                  <h4 class="titleH4">Entradas</h4>
                                                   <h4>Aperitivos de dar água na boca...</h4></a>
     </div>
     <p>Não importa o que você busca, seja um almoço em família, um encontro romântico ou até mesmo um rolê para beber com amigos, aqui você encontrará o que precisa e faremos o seu dia mais especial. E casa queira levar um pouquinho do nosso gostinho de felicidade, você pode, com nossas delicatéssen's.</p>
