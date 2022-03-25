@@ -24,6 +24,10 @@ header{
   z-index: 1;
 }
 
+.headerButtons{
+  display: none;
+}
+
 .action{
   position: fixed;
   bottom: 50px;
@@ -98,25 +102,42 @@ header{
 
 .action ul li img{
   margin-left: 10px;
-  opacity: 0.7;
+}
+
+.action ul{
+  padding: 10px 10px 10px 10px;
+  right: -10px;
 }
 
 .action a{
+  display: flex;
+  align-items: center;
   text-decoration: none;
   color: black;
-  opacity: 0.5;
+  opacity: 0.7;
 }
 
 .iconButton{
   width: 30px;
   height: 30px;
   margin-right: 8px;
+  margin-left: 222px;
 }
 
 .logoWritten{
   display: block;
   width: 12.8125rem;
   height: 1.875rem;
+}
+
+#home{
+  background-image: linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65)), url(./assets/table.jpg);
+  background-position: left center; 
+  background-size: cover;
+  width: 100%;
+  display: inline-block;
+  padding: 120px 0px 130px 0px ;
+  border-radius: 0px 0px 8px 8px;
 }
 
 body{
@@ -131,8 +152,8 @@ h1{
   font-family: 'Mulish';
   font-style: normal;
   font-weight: 800;
-  font-size: 30px;
-  line-height: 45px;
+  font-size: 2rem;
+  line-height: 2.8125rem;
   
   margin: auto;
   padding: 0% 4.5% 0% 4.5%;
@@ -140,9 +161,9 @@ h1{
 
 h2{
 font-weight: 700;
-font-size: 24px;
+font-size: 1.5rem;
 
-line-height: 30px;
+line-height: 1.875rem;
 text-align: center;
 
 margin-top: 64px;
@@ -163,12 +184,24 @@ p{
 font-family: 'Mulish';
 font-style: normal;
 font-weight: 500;
-font-size: 20px;
-line-height: 25px;
+font-size: 1.25rem;
+line-height: 1.56rem;
 
 margin-top: 14px;
 margin-bottom: 14px;
 text-align: center;
+}
+
+a{
+  text-decoration: none;
+  color: white;
+}
+
+#pHome{
+  color: white;
+  text-align: left;
+  margin: 100px 27px 80px 27px;
+  width: fit-content;
 }
 
 button{
@@ -226,12 +259,28 @@ padding: 12px 28px 12px 28px;
   border-radius: 8px 8px 0px 0px;
   max-width: 100% ;
   max-height: 480px;
+  border: solid rgb(221, 221, 221) 1px;
 }
 
+
 .bothImgBlock1{ 
-  width: 50%;
+  width: 33%;
   min-height: 90px;
   flex-grow: 1;
+  border: solid rgb(221, 221, 221) 1px;
+}
+
+
+#family{
+  border-radius: 8px 8px 0px 0px;
+}
+
+#dog{
+  border-radius: 0px 0px 0px 8px ;
+}
+
+#place{
+  border-radius: 0px 0px 8px 0px;
 }
 
  /*groupImgs2*/
@@ -243,11 +292,27 @@ padding: 12px 28px 12px 28px;
   margin-bottom: 4px;
 }
 
-.boothImgBlock2{
+.bothImg2{
   background-size: cover;
+  object-fit: cover;
+  object-position: center center;
+  size-adjust: 1;
   flex-grow: 1;
-  min-height: 280px;
-  min-width: 130px;
+ width: 50%;
+ min-height: 280px;
+ height: 50%;
+}
+
+#team{
+  background-image: url(./assets/team.jpg);
+  background-position: left center;
+  border-radius: 8px 0px 0px 8px;
+}
+
+#chef{
+  background-image: url(./assets/chef.jpg);
+  background-position: center, left ;
+  border-radius: 0px 8px 8px 0px;
 }
 
   /*cards*/
@@ -256,6 +321,11 @@ padding: 12px 28px 12px 28px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+}
+
+.titleH4{
+  font-size: 14px;
+  margin-bottom: 30px 
 }
 
 .card{
@@ -347,4 +417,185 @@ border-radius: 8px 8px 0px 0px;
 color: white;
 padding: 30px 16px 24px 16px;
 margin-top: 64px;
+}
+
+
+@media screen and (min-width: 425px){
+  h1{
+    font-size: 2.25rem;
+    line-height: 2.8rem;
+    padding: 0px 48px 0px 48px;
+  }
+  #pHome{
+    font-size: 1.2rem;
+    line-height: 1.65rem;
+    padding: 0px 48px 0px 48px;
+  }
+}
+
+/* tablet */
+@media screen and (min-width: 530px) {
+  h1{
+    font-size: 3rem;
+    line-height: 3.5rem;
+    padding: 0px 48px 0px 48px;
+  }
+ #pHome{
+  font-size: 1.4rem;
+  line-height: 2.34rem;
+  padding: 0px 48px 0px 48px;
+}
+}
+
+@media screen and (min-width: 600px)  {
+
+ h2{
+   font-size: 1.6rem;
+   line-height: 2rem;
+ }
+ p{
+   font-size: 1.3rem;
+   line-height: 1.5rem;
+ }
+ 
+  .bothImg2{
+  border-radius: 16px;
+  height: 380px;
+ }
+
+ .card{
+  border-radius: 8px 8px 8px 8px;
+  width: 200px;
+  height: 220px; 
+ }
+.titleH4{
+  font-size: 20px;
+} 
+ h4{
+  margin-top: 30px;
+  font-size: 18px;
+  line-height: 20px;
+ }
+}
+@media screen and (min-width:630px){
+  #home{
+    height: 100vh;
+  }
+  h1{
+    font-size: 3.6rem;
+    line-height: 3.6rem;
+  }
+  #pHome{
+    font-size: 1.75rem;
+    padding: 0px 24px 0px 24px
+  }
+  .firstBlock{
+    display: flex;
+    justify-content: space-between;
+  }
+ 
+  .img1Block1{
+    width: 30%;
+    object-fit: cover;
+    object-position: left center;
+    height: 350px;
+    size-adjust:1;
+  }
+  .bothImgBlock1{
+    width: 30%;
+    object-fit: cover;
+    object-position: center center;
+  
+    height: 350px;
+    size-adjust:1;
+   }
+  
+   #family{
+    border-radius: 8px;
+   }
+   #dog{
+     margin: 0px 8px 0px 8px;
+     border-radius: 8px;
+   }
+   #place{
+    border-radius: 8px;
+   }
+}
+
+@media screen and (min-width: 768px){
+  h1{
+    font-size: 4rem;
+    line-height: 4rem;
+  }
+  #pHome{
+    font-size: 1.90rem;
+    padding: 0px 24px 0px 24px
+  }
+  
+  .groupOfOwners{
+    display: flex;
+    margin: auto;
+    max-width: 500px;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .kenny{
+    display: block;
+  }
+  
+  .brayan{
+   display: block;
+  }
+  
+  .owners{
+    width: 225px;
+    border-radius: 100%;
+  }
+
+  h3{
+    font-size: 24px;
+  }
+}
+/*desktop*/
+@media screen and (min-width: 1024px){
+  .action{
+    display: none;
+  }
+  h1{
+    font-size: 4.5rem;
+    line-height: 4.5rem;
+    margin: 0px;
+  }
+  #pHome{
+    font-size: 2.25rem;
+    padding: 0px 24px 0px 24px;
+    align-self: center;
+  }
+
+  header{
+    justify-content: space-between;
+    padding: 0px 64px 0px 64px;
+  }
+  .headerButtons{
+    display: inline-flex;
+    float: right;
+  }
+  header li{
+    font-size: 18px;
+    margin-left: 32px;
+  }
+  header a:hover{
+    color:#c5001b;
+    text-decoration: underline; 
+  }
+}
+
+@media screen and (min-width: 1050px) {
+  h1{
+    max-width: 900px;
+  }
+  #pHome{
+    max-width: 900px;
+  } 
 }
