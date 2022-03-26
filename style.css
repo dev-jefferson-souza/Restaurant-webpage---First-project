@@ -230,21 +230,6 @@ padding: 12px 28px 12px 28px;
   padding-right: 24px;
 }
 
-/*divider*/
-#divider{
-  height: 161px;
-  display: none;
-  position: absolute;
-  top: 80%;
-  left: 50%;
-  transform: translateX(-50%);
-}
-
-.dividerposition{
-  display: flex;
-  position: relative;
-  }
-
 /*firstBlock*/
 .firstBlock{
   display: flex;
@@ -380,11 +365,16 @@ padding: 12px 28px 12px 28px;
 }
 
 .socialMedia{
-  width: fit-content;
+  display: flex;
+  width: 180px;
+  align-items: center;
+  justify-content: center;
   margin: auto;
+  flex-wrap: wrap;
 }
 
 .social{
+  display: flex;
   color: black;
   font-weight: 700;
   font-size: 24px;
@@ -568,7 +558,7 @@ margin-top: 64px;
     margin: 0px;
   }
   #pHome{
-    font-size: 2.25rem;
+    font-size: 1.8rem;
     padding: 0px 24px 0px 24px;
     align-self: center;
   }
@@ -583,7 +573,7 @@ margin-top: 64px;
   }
   header li{
     font-size: 18px;
-    margin-left: 32px;
+    margin-left: 64px;
   }
   header a:hover{
     color:#c5001b;
